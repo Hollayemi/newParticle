@@ -66,7 +66,7 @@
                             SIGN IN TO YOUR ACCOUNT
                         </h3>
 
-                        <form class="login_panel" id="login-form" method="post">
+                        <form class="login_panel" name="form1" method="post" action="https://www.iauctionx.com/index.php">
                             
                             <div> </div>
                             
@@ -80,7 +80,7 @@
 
                             <div class=" kl-fancy-form">
                             <!-- <input type="password" id="kl-password" name="password" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="type password" required=""/> -->
-                            <input type="password" id="kl-password" name="login-password" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="" required=""/>
+                            <input type="password" id="kl-password" name="password" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="" required=""/>
                                 <label class="kl-font-alt kl-fancy-form-label">
                                     PASSWORD
                                 </label>
@@ -90,7 +90,7 @@
                                 <input type="checkbox" name="rememberme" id="kl-rememberme" value="forever" class="auth-popup-remember-chb"> Remember Me 
                             </label>
 
-                            <input type="submit" id="login-btn" name="submit_button" class="btn btn-fullcolor btn-md" value="LOG IN">
+                            <input type="submit" id="login" name="submit_button" class="btn btn-fullcolor btn-md" value="LOG IN">
 
                             <input type="hidden" value="login" class="" name="form_action"><!-- why this -->
                             <input type="hidden" value="login" class="" name="action"><!-- why this -->
@@ -126,71 +126,139 @@
                     CREATE AN ACCOUNT
                 </h3>
 
-                <form class="register_panel" id="register-form" method="post">
+                <form class="register_panel" name="login_form" method="post" action="https://www.iauctionx.com/index.php?">
                 
-                    <div id="regAlert"> </div>
-                    
-                        <div class="row">
-                            
-                            <div class="col-sm-6">
-                                <div class=" kl-fancy-form ">
-                                    <input type="text" id="reg-firstname" name="firstname" class="form-control inputbox kl-fancy-form-input kl-fw-input" required placeholder="">
-                                    <label class="kl-font-alt kl-fancy-form-label">FIRSTNAME</label>
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-6">
-                                <div class=" kl-fancy-form ">
-                                    <input type="text" id="reg-username" name="surname" class="form-control inputbox kl-fancy-form-input kl-fw-input" required placeholder="">
-                                    <label class="kl-font-alt kl-fancy-form-label">SURNAME</label>
-                                </div>
-                            </div>
-                            
-                        </div><!--row-->
+                <div> </div>
+                
+                    <div class="row">
                         
-                        <div class="row">   
-                            <div class="col-sm-6">
-                                <div class=" kl-fancy-form ">
-                                    <input type="text" id="reg-phone" name="phone" class="form-control inputbox kl-fancy-form-input kl-fw-input" required placeholder="">
-                                    <label class="kl-font-alt kl-fancy-form-label">PHONE</label>
-                                </div>
-                            </div><!--col-->
-                            
-                            <div class="col-sm-6">
-                                <div class="kl-fancy-form">
-                                    <input type="text" id="reg-email" name="email" class="form-control inputbox kl-fancy-form-input kl-fw-input" required placeholder="">
-                                    <label class="kl-font-alt kl-fancy-form-label">
-                                        EMAIL
-                                    </label>
-                                </div>
-                            </div><!--col-->
-                            <div class="col-sm-6">
-                                <div class="kl-fancy-form">
-                                    <input type="password" id="password" name="password" class="form-control inputbox kl-fancy-form-input kl-fw-input" required placeholder="">
-                                    <label class="kl-font-alt kl-fancy-form-label">
-                                        Password
-                                    </label>
-                                </div>
-                            </div><!--col-->
-                            <div class="col-sm-6">
-                                <div class="kl-fancy-form">
-                                    <input type="password" id="password2" name="password2" class="form-control inputbox kl-fancy-form-input kl-fw-input" required placeholder="">
-                                    <label class="kl-font-alt kl-fancy-form-label">
-                                        Confirm Password
-                                    </label>
-                                </div>
-                            </div><!--col-->
-                        </div><!--row-->
+                        <div class="col-sm-6">
+                            <div class=" kl-fancy-form ">
+                                <input type="text" id="reg-firstname" name="firstname" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="">
+                                <label class="kl-font-alt kl-fancy-form-label">FIRSTNAME</label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-6">
+                            <div class=" kl-fancy-form ">
+                                <input type="text" id="reg-username" name="surname" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="">
+                                <label class="kl-font-alt kl-fancy-form-label">SURNAME</label>
+                            </div>
+                        </div>
+                        
+                    </div><!--row-->
+                    
+                    <div class="row">   
+                        <div class="col-sm-6">
+                            <div class=" kl-fancy-form ">
+                                <input type="text" id="reg-phone" name="phone" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="">
+                                <label class="kl-font-alt kl-fancy-form-label">PHONE</label>
+                            </div>
+                        </div><!--col-->
+                        
+                        <div class="col-sm-6">
+                            <div class="kl-fancy-form">
+                                <input type="text" id="reg-email" name="email" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="">
+                                <label class="kl-font-alt kl-fancy-form-label">
+                                    EMAIL
+                                </label>
+                            </div>
+                        </div><!--col-->
+                    </div><!--row-->
+                    
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="kl-fancy-form">
+                                
+                                <select name="gender" class="form-control inputbox kl-fancy-form-input kl-fw-input" >
+                                <option selected="selected" value="">---</option>
+                                <option value="Male" >Male</option>
+                                <option value="Female">Female</option>						  
+                                </select>
+                                <label class="kl-font-alt kl-fancy-form-label">
+                                    GENDER
+                                </label>
+                            </div>
+                        </div><!--col-->
+                        
+                        <div class="col-sm-6">
+                            <div class="kl-fancy-form">
+                                
+                                <select name="city" class="form-control inputbox kl-fancy-form-input kl-fw-input" >
+                                <option selected="selected" value="" >---</option>
+                                    <option value="Abia" >Abia</option>
+                                    <option value="Adamawa" >Adamawa</option>
+                                    <option value="Akwa Ibom" >Akwa Ibom</option>
+                                    <option value="Anambra" >Anambra</option>
+                                    <option value="Bauchi"  >Bauchi</option>
+                                    <option value="Bayelsa" >Bayelsa</option>
+                                    <option value="Benue" >Benue</option>
+                                    <option value="Borno" >Borno</option>
+                                    <option value="Cross River">Cross River</option>
+                                    <option value="Delta" >Delta</option>
+                                    <option value="Ebonyi" >Ebonyi</option>
+                                    <option value="Edo" >Edo</option>
+                                    <option value="Ekiti">Ekiti</option>
+                                    <option value="Enugu" >Enugu</option>
+                                    <option value="FCT" >FCT</option>
+                                    <option value="Gombe">Gombe</option>
+                                    <option value="Imo" >Imo</option>
+                                    <option value="Jigawa" >Jigawa</option>
+                                    <option value="Kaduna" >Kaduna</option>
+                                    <option value="Kano" >Kano</option>
+                                    <option value="Katsina" >Katsina</option>
+                                    <option value="Kebbi">Kebbi</option>
+                                    <option value="Kogi" >Kogi</option>
+                                    <option value="Kwara" >Kwara</option>
+                                    <option value="Lagos" >Lagos</option>
+                                    <option value="Nasarawa">Nasarawa</option>
+                                    <option value="Niger" >Niger</option>
+                                    <option value="Ogun" >Ogun</option>
+                                    <option value="Ondo" >Ondo</option>
+                                    <option value="Osun" >Osun</option>
+                                    <option value="Oyo">Oyo</option>
+                                    <option value="Plateau">Plateau</option>
+                                    <option value="Rivers">Rivers</option>
+                                    <option value="Sokoto">Sokoto</option>
+                                    <option value="Taraba">Taraba</option>
+                                    <option value="Yobe">Yobe</option>
+                                    <option value="Zamfara">Zamfara</option>						  
+                                </select>
+                                <label class="kl-font-alt kl-fancy-form-label">
+                                    STATE/AREA
+                                </label>
+                            </div>
+                        </div><!--col-->
+                    </div><!--row-->
                     
             
             <!-- use this to block spambots from registering fake accounts -->     
                     <div class="row">   
                         <div class="col-sm-6">
                             <div class=" kl-fancy-form ">
+
+    <div style='font-size:16px;'>8  +  6  = </div><input type="hidden" name="number1" value="8"><!-- use this to identify this form post action -->
+    <input type="hidden" name="number2" value="6"><!-- use this to identify this form post action -->
+
+                            </div>
+                        </div><!--col-->
+                        
+                        <div class="col-sm-6">
+                            <div class="kl-fancy-form">
+                                <input type="text" id="reg-answer" name="answer" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="">
+                                <label class="kl-font-alt kl-fancy-form-label">
+                                    ANSWER
+                                </label>
+                            </div>
+                        </div><!--col-->
+                    </div><!--row-->
+                <!-- use this to block spambots from registering fake accounts -->          
+                    
+                    
                     <div class="row">   
                         <div class="col-sm-12">
                             <div class=" kl-fancy-form ">
-                                <input type="textarea" id="reg-address" name="address" class="form-control inputbox kl-fancy-form-input kl-fw-input" required placeholder="">
+                                <input type="textarea" id="reg-address" name="address" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="">
                                 <label class="kl-font-alt kl-fancy-form-label">SHIPPING ADDRESS</label>
                             </div>
                         </div><!--col-->
@@ -198,7 +266,7 @@
                     
                     <div class="row">
                         <div class="">
-                            <input type="submit" id="register-btn" name="submit" class="btn btn-fullcolor btn-md" value="CREATE MY ACCOUNT">
+                            <input type="submit" id="signup" name="submit" class="btn btn-fullcolor btn-md" value="CREATE MY ACCOUNT">
                             <input type="hidden" name="MM_insert" value="register"><!-- use this to identify this form post action -->
                         </div>
                     </div>
@@ -212,12 +280,26 @@
             </div>
         </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div id="forgot_panel" class="divd FP loginbox-popup auth-popup forgot-popup">
             <div class="inner-container forgot-panel auth-popup-panel">
                 <h3 class="m_title m_title_ext text-custom auth-popup-title">
                     FORGOT YOUR DETAILS?
                 </h3>
-                <form class="forgot_form" name="login_form" method="post">
+                <form class="forgot_form" name="login_form" method="post" action="https://www.iauctionx.com/post_reset_password_email.php">
                     <div class=" kl-fancy-form">
                         <input type="text" id="forgot-email" name="email" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="...">
                         <label class="kl-font-alt kl-fancy-form-label">
@@ -247,8 +329,6 @@
 
         </section>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="login.js"></script>
-    <script src="js/app.js"></script>
 </body>
 </html>
