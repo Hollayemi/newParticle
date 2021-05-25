@@ -1,0 +1,25 @@
+.logain{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.newLngPg {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.86);
+    height:100%
+}
+.logainBg{
+    background-image: url('./images/big_hero_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.newLngPg .divd{
+    position: absolute;
+}
+.FP, .CA{
+    transition:.5s;
+    transform: scale(0);
+}
