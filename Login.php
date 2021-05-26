@@ -120,7 +120,7 @@
 
 
                 
-        <div id="register_panel" class="divd CA loginbox-popup auth-popup">
+        <div id="register_panel" class="divd CA loginbox-popup regAuth-popup auth-popup">
             <div class="inner-container register-panel auth-popup-panel">
                 <h3 class="m_title m_title_ext text-custom auth-popup-title">
                     CREATE AN ACCOUNT
@@ -183,10 +183,9 @@
                         </div><!--row-->
                     
             
-            <!-- use this to block spambots from registering fake accounts -->     
-                    <div class="row">   
-                        <div class="col-sm-6">
-                            <div class=" kl-fancy-form ">
+                <!-- use this to block spambots     from registering fake accounts -->     
+                    
+
                     <div class="row">   
                         <div class="col-sm-12">
                             <div class=" kl-fancy-form ">
@@ -211,6 +210,12 @@
                 </form>
             </div>
         </div>
+
+
+
+
+
+
 
         <div id="forgot_panel" class="divd FP loginbox-popup auth-popup forgot-popup">
             <div class="inner-container forgot-panel auth-popup-panel">

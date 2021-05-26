@@ -2534,6 +2534,9 @@ input: -ms-input-placeholder, textarea: -ms-input-placeholder {
     border-radius: 2px;
     position: relative;
 }
+.regAuth-popup{
+    width: 720px;
+}
 .register-popup {
     width: 420px;
 }
